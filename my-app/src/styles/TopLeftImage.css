@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E6DBD0; /* Set your desired background color here */
+}
+
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Optional: adds a margin around the image */
+    width: 50vw; /* 10% of the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 200px; /* Set a maximum width to prevent the image from getting too large */
+}
+
+@media (min-width: 768px) {
+    .top-left-image {
+        width: 50vw; /* Increase width to 15% of the viewport width for larger screens */
+        max-width: 500px; /* Adjust maximum width accordingly */
+    }
+}
+
+@media (min-width: 1024px) {
+    .top-left-image {
+        width: 50vw; /* Increase width to 20% of the viewport width for even larger screens */
+        max-width: 600px; /* Adjust maximum width accordingly */
+    }
+}
